@@ -1,0 +1,33 @@
+[package]
+name = "btt"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "simple"
+path = "src/traverse_simple.rs"
+
+[[bin]]
+name = "heapless"
+path = "src/traverse_heapless.rs"
+
+[[bin]]
+name = "loop"
+path = "src/traverse_chase_loop.rs"
+
+[[bin]]
+name = "option"
+path = "src/traverse_chase_option.rs"
+
+[[bin]]
+name = "loop_vec"
+path = "src/traverse_chase_loop_vec.rs"
+
+[[bin]]
+name = "option_vec"
+path = "src/traverse_chase_option_vec.rs"
+
+[dependencies]
+heapless = "0.8"

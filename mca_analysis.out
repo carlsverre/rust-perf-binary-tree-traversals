@@ -1,0 +1,71 @@
+[0] Code Region - SIMPLE
+
+Iterations:        100
+Instructions:      5400
+Total Cycles:      3098
+Total uOps:        7000
+
+Dispatch Width:    6
+uOps Per Cycle:    2.26
+IPC:               1.74
+Block RThroughput: 14.0
+--
+[1] Code Region - HEAPLESS
+
+Iterations:        100
+Instructions:      4600
+Total Cycles:      2628
+Total uOps:        5700
+
+Dispatch Width:    6
+uOps Per Cycle:    2.17
+IPC:               1.75
+Block RThroughput: 10.0
+--
+[2] Code Region - HEAPLESS_LOOP
+
+Iterations:        100
+Instructions:      3900
+Total Cycles:      2178
+Total uOps:        5000
+
+Dispatch Width:    6
+uOps Per Cycle:    2.30
+IPC:               1.79
+Block RThroughput: 9.0
+--
+[3] Code Region - HEAPLESS_OPTION
+
+Iterations:        100
+Instructions:      5800
+Total Cycles:      3055
+Total uOps:        7100
+
+Dispatch Width:    6
+uOps Per Cycle:    2.32
+IPC:               1.90
+Block RThroughput: 11.8
+--
+[4] Code Region - VEC_LOOP
+
+Iterations:        100
+Instructions:      5100
+Total Cycles:      3106
+Total uOps:        6900
+
+Dispatch Width:    6
+uOps Per Cycle:    2.22
+IPC:               1.64
+Block RThroughput: 13.0
+--
+[5] Code Region - VEC_OPTION
+
+Iterations:        100
+Instructions:      6700
+Total Cycles:      3826
+Total uOps:        8800
+
+Dispatch Width:    6
+uOps Per Cycle:    2.30
+IPC:               1.75
+Block RThroughput: 16.0

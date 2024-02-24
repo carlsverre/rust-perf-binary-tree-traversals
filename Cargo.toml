@@ -12,6 +12,12 @@ name = "btt"
 path = "src/lib.rs"
 
 [dependencies]
-coca = { version = "0.3.0", features = ["alloc"] }
 heapless = "0.8"
 rand = "0.8"
+
+[dependencies.coca]
+# this commit represents the unreleased 0.3.1 version of coca
+# update once https://github.com/teryror/coca/issues/7 is closed
+git = "https://github.com/teryror/coca"
+rev = "cdb343abc5f63c87b78edb1441b0a4c41dc25ef4"
+features = ["alloc"]

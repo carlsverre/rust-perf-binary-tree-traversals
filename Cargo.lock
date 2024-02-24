@@ -26,8 +26,7 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 [[package]]
 name = "coca"
 version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "eb3523379ee0ab09b59cf76ff8813fde775e78f873ab5a1b23c78bfad47d1e11"
+source = "git+https://github.com/teryror/coca?rev=cdb343abc5f63c87b78edb1441b0a4c41dc25ef4#cdb343abc5f63c87b78edb1441b0a4c41dc25ef4"
 
 [[package]]
 name = "getrandom"

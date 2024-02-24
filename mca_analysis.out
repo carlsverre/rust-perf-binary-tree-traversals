@@ -22,7 +22,19 @@ uOps Per Cycle:    2.17
 IPC:               1.75
 Block RThroughput: 10.0
 --
-[2] Code Region - HEAPLESS_LOOP
+[2] Code Region - COCA
+
+Iterations:        100
+Instructions:      4200
+Total Cycles:      2300
+Total uOps:        5300
+
+Dispatch Width:    6
+uOps Per Cycle:    2.30
+IPC:               1.83
+Block RThroughput: 8.8
+--
+[3] Code Region - HEAPLESS_LOOP
 
 Iterations:        100
 Instructions:      3900
@@ -34,7 +46,7 @@ uOps Per Cycle:    2.30
 IPC:               1.79
 Block RThroughput: 9.0
 --
-[3] Code Region - HEAPLESS_OPTION
+[4] Code Region - HEAPLESS_OPTION
 
 Iterations:        100
 Instructions:      5800
@@ -46,7 +58,7 @@ uOps Per Cycle:    2.32
 IPC:               1.90
 Block RThroughput: 11.8
 --
-[4] Code Region - VEC_LOOP
+[5] Code Region - VEC_LOOP
 
 Iterations:        100
 Instructions:      5100
@@ -58,7 +70,7 @@ uOps Per Cycle:    2.22
 IPC:               1.64
 Block RThroughput: 13.0
 --
-[5] Code Region - VEC_OPTION
+[6] Code Region - VEC_OPTION
 
 Iterations:        100
 Instructions:      6700
@@ -69,3 +81,15 @@ Dispatch Width:    6
 uOps Per Cycle:    2.30
 IPC:               1.75
 Block RThroughput: 16.0
+--
+[7] Code Region - COCA_LOOP
+
+Iterations:        100
+Instructions:      3400
+Total Cycles:      1864
+Total uOps:        4300
+
+Dispatch Width:    6
+uOps Per Cycle:    2.31
+IPC:               1.82
+Block RThroughput: 7.2

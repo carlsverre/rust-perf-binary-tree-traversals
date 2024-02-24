@@ -42,6 +42,8 @@ pub fn main() {
         ("heapless_option", Box::new(HeaplessOption)),
         ("vec_loop", Box::new(VecLoop)),
         ("vec_option", Box::new(VecOption)),
+        ("coca_loop", Box::new(CocaLoop)),
+        ("coca", Box::new(Coca)),
     ];
 
     for traversal in traversals {

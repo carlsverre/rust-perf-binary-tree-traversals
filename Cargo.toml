@@ -12,5 +12,6 @@ name = "btt"
 path = "src/lib.rs"
 
 [dependencies]
+coca = { version = "0.3.0", features = ["alloc"] }
 heapless = "0.8"
 rand = "0.8"

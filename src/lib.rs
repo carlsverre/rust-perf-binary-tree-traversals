@@ -83,6 +83,32 @@ impl Traverse for Heapless {
     }
 }
 
+pub struct Coca;
+
+impl Traverse for Coca {
+    fn traverse_sum(&self, store: &Store, root: Digest) -> u32 {
+        let mut stack = coca::collections::AllocVec::with_capacity(32u32);
+        stack.push(root);
+        let mut sum = 0;
+
+        mca!(begin "COCA");
+        while let Some(node) = stack.pop() {
+            match store[&node] {
+                Node::Leaf(n) => {
+                    sum += n;
+                }
+                Node::Branch(l, r) => {
+                    stack.push(r);
+                    stack.push(l);
+                }
+            }
+        }
+        mca!(end "COCA");
+
+        sum
+    }
+}
+
 pub struct HeaplessLoop;
 
 impl Traverse for HeaplessLoop {
@@ -196,6 +222,35 @@ impl Traverse for VecOption {
             }
         }
         mca!(end "VEC_OPTION");
+
+        sum
+    }
+}
+
+pub struct CocaLoop;
+
+impl Traverse for CocaLoop {
+    fn traverse_sum(&self, store: &Store, root: Digest) -> u32 {
+        let mut stack = coca::collections::AllocVec::with_capacity(32u32);
+        stack.push(root);
+        let mut sum = 0;
+
+        mca!(begin "COCA_LOOP");
+        while let Some(mut node) = stack.pop() {
+            loop {
+                match store[&node] {
+                    Node::Leaf(n) => {
+                        sum += n;
+                        break;
+                    }
+                    Node::Branch(l, r) => {
+                        stack.push(r);
+                        node = l;
+                    }
+                }
+            }
+        }
+        mca!(end "COCA_LOOP");
 
         sum
     }
